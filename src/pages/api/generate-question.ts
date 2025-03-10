@@ -121,7 +121,7 @@ Do not include any other text in your response, only the JSON object.`;
 
     // Call the OpenAI API
     const completion = await openai.chat.completions.create({
-      model: "o1",
+      model: "gpt-4o",
       messages: [
         { role: "system", content: prompt },
         { role: "user", content: "Generate a math question based on the criteria above." }
