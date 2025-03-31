@@ -86,8 +86,15 @@ Respond with a JSON object in this exact format:
   "question": "The math question text",
   "answer": "The correct answer (just the number)",
   "difficulty": "${skillsList[nextSkillIndex]}",
-  "explanation": "A brief explanation of how to solve this problem"
+  "explanation": "A brief explanation of how to solve this problem",
+  "steps": [
+    "Step 1: Description of first step in solving",
+    "Step 2: Description of second step in solving",
+    "..."
+  ]
 }
+
+The "steps" array should contain 3-5 clear step-by-step instructions showing exactly how to solve the problem, breaking down the solution process into manageable chunks suitable for the difficulty level. Make the steps detailed enough for a student to follow along and learn from.
 
 Do not include any other text in your response, only the JSON object.`;
     } else {
@@ -113,8 +120,15 @@ Respond with a JSON object in this exact format:
   "question": "The math question text",
   "answer": "The correct answer (just the number)",
   "difficulty": "The current difficulty level as a string",
-  "explanation": "A brief explanation of how to solve this problem"
+  "explanation": "A brief explanation of how to solve this problem",
+  "steps": [
+    "Step 1: Description of first step in solving",
+    "Step 2: Description of second step in solving",
+    "..."
+  ]
 }
+
+The "steps" array should contain 3-5 clear step-by-step instructions showing exactly how to solve the problem, breaking down the solution process into manageable chunks suitable for the difficulty level. Make the steps detailed enough for a student to follow along and learn from.
 
 Do not include any other text in your response, only the JSON object.`;
     }
